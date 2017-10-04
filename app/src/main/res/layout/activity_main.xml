@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.kishorebaktha.trial.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="38dp"
+        android:onClick="view"
+        android:text="View"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp"
+        android:onClick="select"
+        android:text="Select"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/et2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="106dp"
+        android:background="@android:color/white" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="68dp"
+        android:background="@android:color/white"
+        android:hint="Serial Number"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/button"
+        android:text="                             WELCOME USER!"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/user"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_alignEnd="@+id/button"
+        android:layout_above="@+id/et" />
+
+</RelativeLayout>
